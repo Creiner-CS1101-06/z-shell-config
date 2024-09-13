@@ -19,7 +19,7 @@ case "$answer" in
     "alex" )
         [ -f ~/.config/zsh/.zshrc ] && rm ~/.config/zsh/.zshrc
         echo "You chose alex"
-        cp ~/z-shell-config/zshrc.professor ~/.config/zsh.zshrc
+        cp ~/z-shell-config/zshrc.professor ~/.config/zsh/zsh.zshrc
         exit 1
         ;;
     *)
