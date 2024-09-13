@@ -37,3 +37,4 @@ alias ls='ls --color=auto'
 
 echo "Hello alex"
 echo "I hate github"
+echo "but I hate myself even more"
