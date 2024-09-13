@@ -4,20 +4,22 @@ echo "Are you Mac-OS (m) or Windows/WSL/Linux (w)?"
 read answer
 
 git clone https://github.com/Creiner-CS1101-06/z-shell-config.git ~/z-shell-config
-[ -f ~/.zshrc ] && rm ~/.zshrc
 
 case "$answer" in
     [Mm]* )
+        [ -f ~/.zshrc ] && rm ~/.zshrc
         echo "You have selected Mac-OS."
         cp ~/z-shell-config/zshrc\(mac-os\) ~/.zshrc
         ;;
     [Ww]* )
+        [ -f ~/.zshrc ] && rm ~/.zshrc
         echo "You have selected Windows"
         cp ~/z-shell-config/zshrc\(windows\) ~/.zshrc
         ;;
     "alex" )
+        [ -f ~/.config/zsh/.zshrc ] && rm ~/.config/zsh/.zshrc
         echo "You chose alex"
-        cp ~/z-shell-config/zshrc.professor ~/.zshrc
+        cp ~/z-shell-config/zshrc.professor ~/.config/zsh.zshrc
         exit 1
         ;;
     *)
