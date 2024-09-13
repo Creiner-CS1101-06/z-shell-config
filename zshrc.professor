@@ -35,3 +35,5 @@ source ~/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 alias ls='ls --color=auto'
 
+echo "Hello alex"
+
