@@ -22,9 +22,9 @@ case "$answer" in
         [ -f ~/.config/zsh/.zshrc ] && rm ~/.config/zsh/.zshrc
         echo "You chose alex"
         unalias -a
-        for func in $(typeset -f | awk '/^[a-zA-Z_][a-zA-Z0-9_]* \(\)/ {print $1}'); do
-            unset -f $func  # Remove all functions
-        done
+        # for func in $(typeset -f | awk '/^[a-zA-Z_][a-zA-Z0-9_]* \(\)/ {print $1}'); do
+        #     unset -f $func  # Remove all functions
+        # done
         cp ~/z-shell-config/zshrc.professor ~/.config/zsh/.zshrc
         source ~/.config/zsh/.zshrc
         ;;
