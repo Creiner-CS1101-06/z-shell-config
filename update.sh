@@ -10,17 +10,19 @@ case "$answer" in
         [ -f ~/.zshrc ] && rm ~/.zshrc
         echo "You have selected Mac-OS."
         cp ~/z-shell-config/zshrc\(mac-os\) ~/.zshrc
+        source ~/.zshrc
         ;;
     [Ww]* )
         [ -f ~/.zshrc ] && rm ~/.zshrc
         echo "You have selected Windows"
         cp ~/z-shell-config/zshrc\(windows\) ~/.zshrc
+        source ~/.zshrc
         ;;
     "alex" )
         [ -f ~/.config/zsh/.zshrc ] && rm ~/.config/zsh/.zshrc
         echo "You chose alex"
         cp ~/z-shell-config/zshrc.professor ~/.config/zsh/.zshrc
-        exit 1
+        source ~/.config/zsh/.zshrc
         ;;
     *)
         echo "Invalid answer. Please run the script again and  either type the letter m if you are a Mac-OS user or w if you are a Windows/WSL/Linux user."
@@ -30,5 +32,4 @@ esac
 
 [ -f ~/.config/starship.toml ] && rm ~/.config/starship.toml
 cp ~/z-shell-config/starship.toml ~/.config/starship.toml
-source ~/.zshrc
 rm -rf ~/z-shell-config
