@@ -37,7 +37,7 @@ alias ls='ls --color=auto'
 
 function switch-back {
     rm ~/.config/zsh/.zshrc
-    cp ~/.config/zsh/.zshrc/bak ~/.config/zsh/.zshrc
+    cp ~/.config/zsh/.zshrc.bak ~/.config/zsh/.zshrc
     source .zshrc
     rm ~/.config/starship.toml
     cp ~/.config/starship-mine.toml ~/.config/starship.toml
