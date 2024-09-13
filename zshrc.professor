@@ -41,8 +41,7 @@ function switch-back {
     #     unset -f $func  # Remove all functions
     # done
     rm ~/.config/zsh/.zshrc
-    cp ~/.config/zsh/.zshrc.bak ~/.config/zsh/.zshrc
-    [ -f ~/.config/zsh/.zshrc ] && source ~/.config/zsh/.zshrc
+    cp ~/.config/zsh/.zshrc.bak ~/.config/zsh/.zshrc && source ~/.config/zsh/.zshrc
     rm ~/.config/starship.toml
     cp ~/.config/starship-mine.toml ~/.config/starship.toml
 }
