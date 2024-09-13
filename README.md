@@ -1,5 +1,28 @@
 # z-shell-config
 Configuration files for the zsh terminal for my students
+## Updating your already installed configuration
+#### Mac-OS Users
+First, double check your home folder (i.e. `/home/user/` where user is your user name) and make sure there is no folder titled 'z-shell-config'. If there is, delete it. Then copy and paste the following into the terminal
+```sh
+git clone https://github.com/Creiner-CS1101-06/z-shell-config.git ~
+if [ -f ~/.zshrc ] && rm ~/.zshrc
+cp "~/z-shell-config/zshrc(mac-os)" ~/.zshrc
+if [ -f ~/.config/starship.toml ] && rm ~/.config/starship.toml
+cp "~/z-shell-config/starship.toml" ~/.config/starship.toml
+source ~/.zshrc  
+```
+
+#### Windows/WSL/Linux Users
+First, double check your home folder (i.e. `/home/user/` where user is your user name) and make sure there is no folder titled 'z-shell-config'. If there is, delete it. Then copy and paste the following into the terminal
+```sh
+git clone https://github.com/Creiner-CS1101-06/z-shell-config.git ~
+if [ -f ~/.zshrc ] && rm ~/.zshrc
+cp "~/z-shell-config/zshrc(windows)" ~/.zshrc
+if [ -f ~/.config/starship.toml ] && rm ~/.config/starship.toml
+cp "~/z-shell-config/starship.toml" ~/.config/starship.toml
+source ~/.zshrc  
+```
+
 ## Installation
 
 #### Mac-OS Users
