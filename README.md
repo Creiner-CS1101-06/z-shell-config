@@ -1,6 +1,7 @@
 # z-shell-config
 Configuration files for the zsh terminal for my students
 ## Updating your already installed configuration
+**THIS DELETES BOTH YOUR OLD .zshrc FILE AND YOUR starship.toml FILE!!! IF YOU WANT TO KEEP ANYTHING PERSONAL CHANGES YOU HAVE MADE TO EITHER, BACK THEM UP BEFORE UPDATING**
 #### Mac-OS Users
 First, double check your home folder (i.e. `/home/user/` where user is your user name) and make sure there is no folder titled 'z-shell-config'. If there is, delete it. Then copy and paste the following into the terminal
 ```sh
